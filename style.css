@@ -58,7 +58,7 @@ h1 {
 
 .play button:hover {
   background-color: darkred;
-  font-size: 45px;
+  font-size: 42px;
 }
 
 .panel {
@@ -94,7 +94,7 @@ h1 {
  }
 
  .play button:hover {
-  font-size: 35px;
+  font-size: 32px;
 }
 
 }
