@@ -38,12 +38,12 @@ class Game {
   }
 
   startGame() {
-    if (this.inputBid.value < 1) return alert('The amount of money you want to play is too low!')
+    if (this.inputBid.value < 1) return alert('The amount of money you want to play is too low!');
     const bid = Math.floor(this.inputBid.value);
 
     if (!this.wallet.checkCanPlay(bid)) {
-      return alert("You don't have enough resources or you put an incorrect value")
-    }
+      return alert("You don't have enough resources or you put an incorrect value");
+    };
 
     this.wallet.changeWallet(bid, '-');
 
@@ -54,7 +54,7 @@ class Game {
     this.wallet.changeWallet(wonMoney);
     this.stats.addGameToStatistics(win, bid);
 
-    this.render(colors, this.wallet.getWalletValue(), win, this.stats.showGameStatistics(), bid, wonMoney)
+    this.render(colors, this.wallet.getWalletValue(), win, this.stats.showGameStatistics(), bid, wonMoney);
 
   }
 }
