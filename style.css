@@ -7,13 +7,14 @@
 .wrap {
  width: 80%;
  margin: 5vh auto 0;
- font-family: 'open sans', roboto, sans-serif; 
+ font-family: 'Roboto', sans-serif;
 }
 
 h1 {
  text-align: center;
  text-transform: uppercase;
- margin-bottom: 30px;
+ margin-bottom: 20px;
+ font-family: 'Press Start 2P', cursive;
 }
 
 .game {
@@ -33,18 +34,21 @@ h1 {
 }
 
 .play input{
- height: 90px;
+  display: block;
+ height: 70px;
  font-size: 40px;
  padding: 20px;
  width: 400px;
  border: 3px solid black;
  text-align: center;
+ margin: 20px auto;
 }
+
+
 .play button {
-  width: 40%;
-  height:90px;
+  width: 30%;
   text-align: center;
-  padding: 20px 60px;
+  padding: 17px 60px;
   font-size: 40px;
   text-transform: uppercase;
   background-color: #333;
@@ -62,39 +66,57 @@ h1 {
 }
 
 .panel {
- margin: 80px 0 40px;
- font-size: 26px;
+ margin: 60px 0 30px;
 }
 
-.panel, .score {
- font-size: 26px;
+.panel,.score {
+  font-size: 26px;
+  text-align: center;
 }
+
+.wallet {
+  border: 3px solid black;
+  padding: 5px 10px;
+}
+
 .panel span, .score span {
  font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+th, td {
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+
+@media (max-width: 1400px) {
  .wrap {
  width: 90%;
  }
- .play input{
-  height: 70px;
-  font-size: 30px;
-  display: block;
-  margin: 20px auto;
 
+ .play input{
+  height: 60px;
+  font-size: 30px;
+  
  }
  .play button {
-  height: 74px;
+  height: 60px;
   font-size: 30px;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
   padding: 0 20px ;
  }
 
  .play button:hover {
   font-size: 32px;
 }
+
+.panel {
+  margin: 40px 0 30px;
+ }
 
 }
